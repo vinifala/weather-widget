@@ -1,0 +1,1 @@
+export { convertDegreesToCompassDirection } from "./degreesToCompassDirection"
