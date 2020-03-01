@@ -28,7 +28,7 @@ React based weather widget that reads the device's current location from `window
 
 Things left out or not complete due to time constraint
 
-- I'd like to make the widget API agnostic, that is why there's an input interface and the call to the API is imported in the component instead of hard coded there. I have layed the foundation to open the possibility of reusing the widget with another weather information provider, however that's not fully fleshed out. I would like to have made an abstract class to serve as interface between the API data and the data the widget requires to work. Each API would then extend this class and transform data to fit the interface
+- I'd like to make the widget API agnostic, that is why there's an input interface and the call to the API is imported in the component instead of hard coded there. I have layed the foundation to open the possibility of reusing the widget with another weather information provider, however that's not fully fleshed out. I would like to have made an abstract class to serve as interface between the API data and the data the widget requires to work. Each API would then extend this class and transform data to fit the interface and be passed to the component
 
 - Styled componend generated class names. I would have liked to have given meaningful class names
 
