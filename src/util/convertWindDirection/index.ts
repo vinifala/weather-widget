@@ -1,1 +1,1 @@
-export { convertDegreesToCompassDirection } from "./degreesToCompassDirection"
+export { degreesToCompassDirection } from "./degreesToCompassDirection"

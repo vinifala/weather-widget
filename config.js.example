@@ -1,0 +1,3 @@
+module.exports = {
+  OWMAppId: "Your Open Weather Map API App ID",
+}

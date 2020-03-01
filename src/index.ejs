@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <script>
+      var appConfig = JSON.parse(`<%= htmlWebpackPlugin.options.appConfig %>`)
+    </script>
   </head>
   <body>
     <div id="root"></div>

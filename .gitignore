@@ -4,6 +4,7 @@
 
 dist
 node_modules
+config.js
 
 *.sublime-project
 *.sublime-workspace

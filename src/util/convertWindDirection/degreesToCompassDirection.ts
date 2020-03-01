@@ -12,6 +12,5 @@ const compassDirectionLookup: CompassDirection[] = [
   CompassDirection.N,
 ]
 
-export const convertDegreesToCompassDirection = (
-  degrees: number
-): CompassDirection => compassDirectionLookup[Math.round((degrees % 360) / 45)]
+export const degreesToCompassDirection = (degrees: number): CompassDirection =>
+  compassDirectionLookup[Math.round((degrees % 360) / 45)]
