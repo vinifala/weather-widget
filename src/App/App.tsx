@@ -1,4 +1,5 @@
 import * as React from "react"
+import styled from "styled-components"
 
 import { Form, FormValue } from "../components"
 import { WeatherWidget } from "../components"
@@ -23,6 +24,29 @@ interface AppProps {
   OWMAppId: string
 }
 
+const Container = styled.div`
+  background-color: #f5f5f5;
+  border: #c5c5c5 1px solid;
+  border-radius: 0 0 5px 5px;
+  display: flex;
+  font-family: "Open Sans", sans-serif;
+  margin-left: 20px;
+  margin-top: 32px;
+  padding: 64px;
+  position: relative;
+
+  &:before {
+    background-color: #1976d2;
+    content: "";
+    display: block;
+    height: 4px;
+    left: 0;
+    position: absolute;
+    top: -13px;
+    width: 100%;
+  }
+`
+
 export const App: React.FC<AppProps> = ({ OWMAppId }: AppProps) => {
   const [formValue, dispatch] = React.useReducer(reducer, {
     temperature: "C",
@@ -31,7 +55,7 @@ export const App: React.FC<AppProps> = ({ OWMAppId }: AppProps) => {
   })
 
   return (
-    <div>
+    <Container>
       <Form
         initialValue={formValue}
         onChange={(e): void => {
@@ -44,6 +68,6 @@ export const App: React.FC<AppProps> = ({ OWMAppId }: AppProps) => {
         title={formValue.title || "TITLE OF WIDGET"}
         units={formValue.temperature}
       />
-    </div>
+    </Container>
   )
 }
