@@ -30,8 +30,9 @@ const Container = styled.div`
   border-radius: 0 0 5px 5px;
   display: flex;
   font-family: "Open Sans", sans-serif;
-  margin-left: 20px;
-  margin-top: 32px;
+  font-size: 16px;
+  margin: 32px 20px;
+  max-width: 800px;
   padding: 64px;
   position: relative;
 

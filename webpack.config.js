@@ -3,8 +3,6 @@ const HtmlWebpackPlugin = require("html-webpack-plugin")
 const { CleanWebpackPlugin } = require("clean-webpack-plugin")
 const appConfig = require("./config")
 
-console.log(appConfig)
-
 module.exports = {
   mode: "development",
 
